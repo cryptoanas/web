@@ -1,0 +1,27 @@
+{
+  "name": "drift-sol-perp-autotrader",
+  "version": "1.0.0",
+  "description": "Production-ready auto trading bot for Drift Protocol SOL-PERP with Telegram controls",
+  "main": "dist/main.js",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/main.js",
+    "dev": "ts-node src/main.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@drift-labs/sdk": "^2.98.0",
+    "dotenv": "^16.4.5",
+    "grammy": "^1.30.0",
+    "technicalindicators": "^3.1.0",
+    "winston": "^3.13.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.3"
+  }
+}
